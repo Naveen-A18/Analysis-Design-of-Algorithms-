@@ -16,7 +16,7 @@ int main(void)
 	double startTime,endTime;
 	printf("Enter the number of elements to sort\n");
 	scanf("%d",&n);
-	//To generate randomly
+	//To generate randomly 
 	for(i=0;i<n;i++)
 		a[i]=rand();
 	printf("\nBefore Sorting:\n");
