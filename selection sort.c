@@ -40,5 +40,6 @@ int main()
       	   printf("%d\t",a[i]);
     	printf("\n");
     	printf("Time taken is %10.9f\n",(double)(endTime-startTime));
+		return 0;
 }
 
