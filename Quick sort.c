@@ -47,4 +47,37 @@ int partition(int a[],int low,int high)
 		else
 		{
 			swap(&a[low],&a[j]);
+       return j;
+		}
+	}
+}
+
+
+void main()
+{
+ 	int a[MAX],n,i,low,high;
+  	clock_t start,end;
+     	float duration;
+     	printf("\n enter the number of elements to sort");
+     	scanf("%d", &n);
+     	printf("\n  elements are:\n");
+     	for(i=0;i<n;i++)
+     	{
+     		//scanf("%d",&a[i]);
+     		a[i]=random();
+		printf(“Before Sorting\n”);
+     		printf("%d\t",a[i]);
+     	}
+     	printf("\n");
+     	start=clock();
+     	low=0,high=n-1;
+     	quicksort(a,low,high);
+     	end=clock();
+     	duration=(end-start);
+     	printf("\n sorted array is::\n");
+     	for(i=0;i<n;i++)
+     		printf("\n\t%d",a[i]);
+     	printf("\n");
+     	printf("time taken is %f",duration);
+}
 
